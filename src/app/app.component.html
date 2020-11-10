@@ -1,0 +1,22 @@
+
+<p>
+  <button (click)="mode = 1">Mode 1</button>
+  <button (click)="mode = 2">Mode 2</button>
+  <button (click)="mode = 3">Mode 3</button>
+  <button (click)="mode = 4">Mode 4</button>
+  <b> {{ mode }} </b>
+</p>
+
+<div>
+  <app-shaky
+    *ngIf="mode === 1"
+  ></app-shaky>
+
+  <app-wobbly
+    *ngIf="mode === 2"
+  ></app-wobbly>
+
+  <app-startwob
+    *ngIf="mode === 3"
+  ></app-startwob>
+</div>

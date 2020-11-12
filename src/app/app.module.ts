@@ -8,10 +8,12 @@ import { BaseComponent } from './base/base.component';
 import { ShakyComponent } from './shaky/shaky.component';
 import { WobblyComponent } from './wobbly/wobbly.component';
 import { StartwobComponent } from './startwob/startwob.component';
+import { BooComponent } from './boo/boo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, BaseComponent, ShakyComponent, WobblyComponent, StartwobComponent ],
+  imports:      [ BrowserModule, BrowserAnimationsModule, FormsModule ],
+  declarations: [ AppComponent, HelloComponent, BaseComponent, ShakyComponent, WobblyComponent, StartwobComponent, BooComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -1,0 +1,15 @@
+
+<button
+  (click)="flipping = !flipping"
+>flipping</button>
+
+<button
+  (click)="shaking = !shaking"
+>shaking</button>
+
+<div 
+  [@flipping]="flipping ? 'true' : 'false'"
+	[@shaking]="shaking ? 'true' : 'false'"
+> 
+boo works!
+</div>

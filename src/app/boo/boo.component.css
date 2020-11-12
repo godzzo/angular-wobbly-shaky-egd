@@ -1,0 +1,14 @@
+div {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+  padding: 20px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+
+  width: 75px;
+  height: 75px;
+  background: #333;
+}

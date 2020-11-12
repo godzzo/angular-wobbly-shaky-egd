@@ -5,11 +5,12 @@ import { flippingAnimation, fuseAnimations, shakingAnimation } from '../animatio
   selector: 'app-boo',
   templateUrl: './boo.component.html',
   styleUrls: ['./boo.component.css'],
-  animations: [shakingAnimation, flippingAnimation],
+  animations: [shakingAnimation, flippingAnimation, ...fuseAnimations],
 })
 export class BooComponent implements OnInit, AfterViewInit {
   flipping = false;
   shaking = false;
+  slideInLeft = false;
 
   constructor() { }
 
@@ -17,7 +18,6 @@ export class BooComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.state = 'ngAfterViewInit';
   }
 
 }

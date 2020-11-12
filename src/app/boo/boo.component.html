@@ -7,9 +7,19 @@
   (click)="shaking = !shaking"
 >shaking</button>
 
+<button
+  (click)="slideInLeft = !slideInLeft"
+>slideInLeft</button>
+
+<div 
+	[@shaking]="shaking ? 'true' : 'false'"
+  [@slideInLeft]="slideInLeft? 'void': 'start'"
+> 
+  boo works!
+</div>
+
 <div 
   [@flipping]="flipping ? 'true' : 'false'"
-	[@shaking]="shaking ? 'true' : 'false'"
 > 
-boo works!
+  boo works!
 </div>

@@ -11,6 +11,7 @@ export class BooComponent implements OnInit, AfterViewInit {
   flipping = false;
   shaking = false;
   slideInLeft = false;
+  slideInBottom = false;
 
   constructor() { }
 

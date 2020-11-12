@@ -1,17 +1,30 @@
 
-<button
-  (click)="flipping = !flipping"
->flipping</button>
+<div>
 
-<button
-  (click)="shaking = !shaking"
->shaking</button>
+  <button
+    (click)="flipping = !flipping"
+  >flipping</button>
 
-<button
-  (click)="slideInLeft = !slideInLeft"
->slideInLeft</button>
+  <button
+    (click)="shaking = !shaking"
+  >shaking</button>
+
+  <button
+    (click)="slideInLeft = !slideInLeft"
+  >slideInLeft</button>
+
+  <button
+    (click)="slideInBottom = !slideInBottom"
+  >slideInBottom</button>
+
+  <button
+    (click)="expandCollapse = !expandCollapse"
+  >expandCollapse</button>
+
+</div>
 
 <div 
+  class="box"
 	[@shaking]="shaking ? 'true' : 'false'"
   [@slideInLeft]="slideInLeft? 'void': 'start'"
 > 
@@ -19,7 +32,22 @@
 </div>
 
 <div 
+  class="box"
   [@flipping]="flipping ? 'true' : 'false'"
 > 
   boo works!
+</div>
+
+<div 
+  class="box"
+  [@slideInBottom]="slideInBottom ? 'void': 'start'"
+> 
+  boo works!
+</div>
+
+<div 
+  class="box"
+  [@expandCollapse]="expandCollapse ? 'void': 'start'"
+> 
+  expandCollapse
 </div>
